@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <content>
+      <div class="row mt-3 ml-1">
+        <h2 class="col">Bish-Bosh 2.0</h2>
+      </div>
+      <div class="row mt-4 ml-1">
+        <h5 class="col">
+          Detta är en applikation som skapats i syfte att träna på javascript.<br />
+          Den loopar igenom en mängd tal och skriver ut antingen talet, Bish, Bosh<br />
+          eller Bish-Bosh, beroende på vilka nämnare som talet är jämnt delbart med.<br />
+          <br />
+          Skriv in tre värden nedan!<br />
+          <br />
+          "Högsta talet" - hur högt applikationen skall räkna<br />
+          "Bish" - vilket tal man skall dividera jämnt med för att aktivera "bish"<br />
+          "Bosh" - vilket tal man skall dividera jämnt med för att aktivera "bosh"<br />
+          <br />
+        </h5>
+      </div>
+      <div class="row mt-2 mb-1 ml-1">
+        <div class="col">
+          <div class="textlabel">Högsta talet: </div>
+          <div class="col"><input type="text" id="loopMaximum"></div>
+        </div>
+      </div>
+      <div class="row ml-1 mb-1">
+        <div class="col">
+          <div class="textlabel">Bish: </div>
+          <div class="col"><input type="text" id="bishDiv"></div>
+        </div>
+      </div>
+      <div class="row ml-1">
+        <div class="col">
+          <div class="textlabel">Bosh: </div>
+          <div class="col"><input type="text" id="boshDiv"></div>
+        </div>
+      </div>
+      <div class="row mt-4 ml-1">
+        <span class="col"><button type="button" id="runButton">Visa lista!</button></span>
+      </div>
+      <div class="row mt-4 ml-1">
+        <div class="col">
+          <textarea id="result" rows="15" cols="50"></textarea>
+        </div>
+      </div>
+      <div class="row mt-4 ml-1">
+        <div class="col">
+          <h5>Copyright 2020 - Mats Nilsson</h5>
+        </div>
+      </div>
+    </content>
+    <script src="./bishbosh.js"></script>
+  </body>
+</html>
