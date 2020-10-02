@@ -8,10 +8,17 @@ function run() {
     let result = document.getElementById('result');
     result.textContent = '';
 
-    for(let i=1; i <= max; i++) {
-        let value = bishBosh(i, bishDiv, boshDiv);
-        result.textContent += i + ': ' + value + '\n';
+    if(max > 0 && bishDiv > 0 && boshDiv > 0) {
+        for(let i=1; i <= max; i++) {
+            let value = bishBosh(i, bishDiv, boshDiv);
+            result.textContent += i + ': ' + value + '\n';
+        }
     }
+    else
+    {
+        result.textContent = 'OBS! Talen måste vara större än noll!';
+    }
+
 }
 
 function bishBosh(tal, divBish, divBosh) {
